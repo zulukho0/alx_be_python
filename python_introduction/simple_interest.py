@@ -1,8 +1,8 @@
-principle = 1000
-rate = 5/100
+principal = 1000
+rate = 0.005
 time = 3
 
-interest = principle * rate * time
+interest = principal * rate * time
 
 message = "The simple interest is: "
 
