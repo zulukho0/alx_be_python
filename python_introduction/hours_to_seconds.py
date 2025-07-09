@@ -1,6 +1,6 @@
 hours = 2
 secondsInHour = 3600
 
-seconds = hours * secondsInHour
+seconds = hours * 3600
 
 print(f"{hours} hour(s) is {seconds} seconds.")
