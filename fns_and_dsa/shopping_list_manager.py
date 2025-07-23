@@ -13,7 +13,7 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            addItem = input("What would you like to add? ")
+            addItem = input("Enter item to add: ")
             if addItem not in shopping_list:
                 shopping_list.append(addItem)
             else:
