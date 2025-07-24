@@ -5,12 +5,12 @@ temp = float(input("Enter the temperature to convert: "))
 conversion = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
 
 def convert_to_celsius(fahrenheit):
-    fahrenheit = FAHRENHEIT_TO_CELSIUS_FACTOR * (fahrenheit-32)
-    print(f"{temp}°F is {fahrenheit}°C")
+    celsius = FAHRENHEIT_TO_CELSIUS_FACTOR * (fahrenheit-32)
+    print(f"{fahrenheit}°F is {celsius}°C")
 
 def convert_to_fahrenheit(celsius):
-    celsius = (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) +32
-    print(f"{temp}°C is {celsius}°F")
+    fahrenheit = (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) +32
+    print(f"{celsius}°C is {fahrenheit}°F")
 
 
 if conversion.upper() == "F":
