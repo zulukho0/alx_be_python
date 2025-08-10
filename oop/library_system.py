@@ -1,14 +1,16 @@
 class Book:
-    def __init__ (self, title: str, auhtor: str):
+    def __init__ (self, title: str, author: str):
         self.title = title
-        self.author = auhtor
+        self.author = author
 
 
 class EBook(Book):
-    def __init__ (self, title: str, auhtor: str, file_size: int, page_count: int):
-        super().__init__(title, auhtor)
+    def __init__ (self, title: str, author: str, file_size: int):
+        super().__init__(title, author)
         self.file_size = file_size
-        self.page_count = page_count
+        
 
 class PrintBook(Book):
-    pass
+    def __init__(self, title: str, author: str, page_count: int):
+        super().__init__(title, author)
+        self.page_count = page_count
